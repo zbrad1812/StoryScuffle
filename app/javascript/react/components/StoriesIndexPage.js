@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import StoriesList from "./StoriesList"
+import Story from "./Story";
 
 const StoriesIndexPage = (props) => {
 const [allStories, setAllStories] = useState([])
@@ -22,9 +22,14 @@ useEffect(() => {
     .catch((error) => console.error(`Error in fetch: ${error.message}`));
 }, []);
 
+  let listOfStories = allStories.map(storyObject => {
+    return <Story story={storyObject}/>
+  })
 
   return (
-    <StoriesList stories={allStories}/>
+    <>
+      {listOfStories}
+    </>
   );
 
 };
