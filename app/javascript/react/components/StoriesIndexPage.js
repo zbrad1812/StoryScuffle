@@ -23,7 +23,7 @@ useEffect(() => {
 }, []);
 
   let listOfStories = allStories.map(storyObject => {
-    return <Story story={storyObject}/>
+    return <Story story={storyObject} key={storyObject.id}/>
   })
 
   return (
