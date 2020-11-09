@@ -14,8 +14,7 @@ const Story = (props) => {
     )
   } else {
     return (
-      <>
-      </>
+      <></>
     );
   }
 };

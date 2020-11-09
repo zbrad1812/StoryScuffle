@@ -1,7 +1,9 @@
 import React, { useState } from "react";
+import { Redirect } from "react-router-dom";
 
 const StoriesNewPage = (props) => {
   const [storyId, setStoryId] = useState(0)
+  const [shouldRedirect, setShouldRedirect] = useState(false)
 
   const [formFields, setFormFields] = useState({
     id: -1,
@@ -48,6 +50,7 @@ const StoriesNewPage = (props) => {
       .then((body) => {
         if (body.id) {
           setStoryId(body.id);
+          setShouldRedirect(true)
         } else if (body.errors) {
           setErrors(body.errors);
         } else {
@@ -57,6 +60,9 @@ const StoriesNewPage = (props) => {
       .catch((error) => console.error(`Error in fetch: ${error.message}`));
   };
 
+  if (shouldRedirect) {
+    return <Redirect to={`/stories/${storyId}`} />;
+  }
 
   return(
     <form className="newStoryForm" onSubmit={handleSubmit}>
