@@ -7,10 +7,10 @@ const Navbar = (props) => {
     <div className={props.classes}>
       <div className="grid-x grid-padding-x">
         <Link className="cell" to="/stories">
-          Check Out The Herd
+          Check Out The Stories
         </Link>
         <Link className="cell" to="/stories/new">
-          Submit Your Own Giraffe
+          Submit Your Own Story
         </Link>
         <Link className="cell" to="/about">
           About
