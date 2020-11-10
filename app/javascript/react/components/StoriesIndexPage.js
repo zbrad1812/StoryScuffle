@@ -27,9 +27,9 @@ useEffect(() => {
   })
 
   return (
-    <>
+    <div className="grid-container full">
       {listOfStories}
-    </>
+    </div>
   );
 
 };
