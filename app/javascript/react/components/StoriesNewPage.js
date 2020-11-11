@@ -66,21 +66,21 @@ const StoriesNewPage = (props) => {
 
   return(
     <form className="newStoryForm" onSubmit={handleSubmit}>
-      <label htmlFor="title">
+      <label className="new-story-title" htmlFor="title">
         Title:
         <input type="text" name="title" onChange={handleChange}/>
       </label>
 
-      <label htmlFor="description">
+      <label className="new-story-desc" htmlFor="description">
         Description:
         <input type="text" name="description" onChange={handleChange}/>
       </label>
 
-      <textarea name="content" form="content" onChange={handleChange}>
+      <textarea className="new-story-content" name="content" form="content" onChange={handleChange}>
         Your story goes here...
       </textarea>
 
-      <div>
+      <div className="new-story-buttons">
         <button className="button">Clear</button>
         <input className="button" type="submit" value="Submit" />
       </div>

@@ -9,10 +9,11 @@
 <body>
   
   <nav class="top-bar">
+  <header>
     <h1><a href="/">StoryScuffle</a></h1>
-
+  </header>
     <section class="top-bar-section">
-      <ul class="right">
+      <ul>
         <%- if current_user -%>
           <li><%= link_to 'Sign Out', destroy_user_session_path, method: :delete %></li>
         <%- else -%>

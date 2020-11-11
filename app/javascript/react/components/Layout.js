@@ -8,7 +8,7 @@ import Navbar from "./Navbar"
 
 const Layout = (props) => {
   return (
-    <>
+    <div>
       <Navbar/>
       <Switch>
         <Route exact path="/" component={StoriesIndexPage} />
@@ -16,7 +16,7 @@ const Layout = (props) => {
         <Route exact path="/stories/new" component={StoriesNewPage} />
         <Route exact path="/stories/:id" component={StoriesShowPage} />
     </Switch>
-  </>
+  </div>
   );
 };
 

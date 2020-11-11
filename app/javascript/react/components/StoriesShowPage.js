@@ -25,9 +25,9 @@ const StoriesShowPage = (props) => {
 
   return(
     <>
-      <h2> {story.title} </h2>
-      <h3> {story.description} </h3>
-      <p> {story.content} </p>
+      <h2 className="show-title"> {story.title} </h2>
+      <h3 className="show-desc"> {story.description} </h3>
+      <p className="show-content"> {story.content} </p>
     </>
   )
 }
