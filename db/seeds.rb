@@ -16,4 +16,8 @@ s5 = Story.create!(title: "The Horror of North Dakota", description: "A spectre 
 
 Comment.destroy_all
 
-c1 = Comment.create!(commentContent: "This story is awesome!", story: s1)
+c1 = Comment.create!(commentContent: "This story is the craziest story ever!", story: s1)
+c2 = Comment.create!(commentContent: "This story is awesome!", story: s2)
+c3 = Comment.create!(commentContent: "This story is epic!", story: s1)
+c4 = Comment.create!(commentContent: "This story is freaking wild!", story: s2)
+c5 = Comment.create!(commentContent: "This story is awesome!", story: s3)
