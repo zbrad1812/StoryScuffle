@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react"
 import CommentsList from "./CommentsList"
+import CommentForm from "./CommentForm"
 
 const StoriesShowPage = (props) => {
   let id = props.match.params.id
@@ -29,6 +30,7 @@ const StoriesShowPage = (props) => {
       <h3 className="show-desc"> {story.description} </h3>
       <p className="show-content"> {story.content} </p>
       <h2>Comments:</h2>
+      <CommentForm id={id}/>
       <CommentsList id={id}/>
     </>
   )
