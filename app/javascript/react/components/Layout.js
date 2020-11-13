@@ -9,6 +9,7 @@ import Navbar from "./Navbar"
 const Layout = (props) => {
   return (
     <div>
+      <Navbar/>
       <Switch>
         <Route exact path="/" component={StoriesIndexPage} />
         <Route exact path="/stories" component={StoriesIndexPage} />

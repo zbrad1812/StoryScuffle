@@ -4,7 +4,7 @@ const Comment = (props) => {
   let commentContent = props.comment?.commentContent
 
   return(
-    <h4> {commentContent} </h4>
+    <h4 className="comment"> {commentContent} </h4>
   )
 }
 

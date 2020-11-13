@@ -1,0 +1,44 @@
+.comments-header {
+  margin-left: 11em;
+  border-style: solid;
+  width: 20em;
+  text-align: center;
+  border-radius: .5em;
+  padding: .2em;
+  background-color: #FFF689;
+}
+
+.comment{
+  margin-left: 21.5em;
+  margin-top: 1em;
+  text-align: center;
+  border-style: solid;
+  border-radius: .5em;
+  width: 24.8em;
+  background-color: #87BFFF;
+}
+
+.newCommentForm{
+  width: 50.1em;
+  margin-left: 27.5em;
+  border-style: solid;
+  border-radius: 1em;
+  padding-left: 1em;
+  padding-right: 1em;
+  background-color: #E8D7FF;
+}
+
+.newCommentLabel{
+  text-align: center;
+}
+
+.new-story-button{
+  text-align: center;
+}
+
+input[type="text"], .commentInputField {
+  background-color : #E8D7FF; 
+}
+
+
+
