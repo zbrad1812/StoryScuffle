@@ -47,16 +47,18 @@ const CommentForm = (props) => {
   };
 
   return (
+    
     <form className="newCommentForm" onSubmit={handleSubmit}>
-      <label htmlFor="commentContent">
+      <label className="newCommentLabel" htmlFor="commentContent">
         Leave a new comment!
-        <input type="text" name="commentContent" onChange={handleChange}/>
+        <input className="commentInputField" type="text" name="commentContent" onChange={handleChange}/>
       </label>
 
-      <div className="new-story-buttons">
+      <div className="new-story-button">
         <input className="button" type="submit" value="Submit" />
       </div>
     </form>
+  
   )
 }
 

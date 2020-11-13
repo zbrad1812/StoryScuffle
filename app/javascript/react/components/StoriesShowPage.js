@@ -29,7 +29,7 @@ const StoriesShowPage = (props) => {
       <h2 className="show-title"> {story.title} </h2>
       <h3 className="show-desc"> {story.description} </h3>
       <p className="show-content"> {story.content} </p>
-      <h2>Comments:</h2>
+      <h2 className="comments-header">Comments:</h2>
       <CommentForm id={id}/>
       <CommentsList id={id}/>
     </>
