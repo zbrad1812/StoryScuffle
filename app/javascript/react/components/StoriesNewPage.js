@@ -65,6 +65,8 @@ const StoriesNewPage = (props) => {
   }
 
   return(
+    <div>
+    <h1> I still need to style this page... </h1>
     <form className="newStoryForm" onSubmit={handleSubmit}>
       <label className="new-story-title" htmlFor="title">
         Title:
@@ -85,6 +87,7 @@ const StoriesNewPage = (props) => {
         <input className="button" type="submit" value="Submit" />
       </div>
     </form>
+    </div>
   )
 }
 

@@ -6,8 +6,8 @@ const Navbar = (props) => {
   return(
     <div class="side-bar navbar off-canvas position-left reveal-for-large" id="my-info" data-off-canvas data-position="left">
       <div class="row column">
-        <h5>now this is a side bar</h5>
-        <p>Duis aliquet egestas purus in blandit. Curabitur vulputate, ligula lacinia scelerisque tempor, lacus lacus ornare ante, ac egestas est urna sit amet arcu. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Sed molestie augue sit amet leo.</p>
+        <br></br><br></br><br></br>
+        <h5><a href="/stories/new">Submit your own story! Sorry about this text color im going to change that soon!</a></h5>
       </div>
     </div>
   );
