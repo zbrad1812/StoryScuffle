@@ -78,8 +78,7 @@ const StoriesNewPage = (props) => {
         <input type="text" name="description" onChange={handleChange}/>
       </label>
 
-      <textarea className="new-story-content" name="content" form="content" onChange={handleChange}>
-        Your story goes here...
+      <textarea className="new-story-content" name="content" form="content" placeholder="Your story goes here..." onChange={handleChange}>
       </textarea>
 
       <div className="new-story-buttons">
