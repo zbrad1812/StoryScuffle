@@ -66,9 +66,9 @@ const StoriesNewPage = (props) => {
 
   return(
     <div>
-    <h1> I still need to style this page... </h1>
+    <h2 className="new-story-page-title"> Submit New Story </h2>
     <form className="newStoryForm" onSubmit={handleSubmit}>
-      <label className="new-story-title" htmlFor="title">
+      <label className="new-story-field-title" htmlFor="title">
         Title:
         <input type="text" name="title" onChange={handleChange}/>
       </label>
