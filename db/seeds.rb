@@ -11,10 +11,10 @@ Story.destroy_all #Why is this so dramatic?
 s1 = Story.create!(
   title: "The Virginia Scare",
   description: "A spectre haunts a small town in Virginia...",
-  content: "  One day, a man by the name of Tom entered the state of Virginia
+  content: "One day, a man by the name of Tom entered the state of Virginia
   with his sister, Mary. They had always been close, but lately things had felt
-  tense. It could've been there's fathers death, but he thought that it was
-  probably more complicated than that. I'd really like to actually try to
+  tense. It could've been their father's death, but he thought that it was
+  probably much more convoluted than that. I'd really like to actually try to
   write an interesting story right now but this is just seed data for my website
   and I should *really* be programming right now... But hey, having a long story
   will definitely be helpful for styling, since that's going to be something
