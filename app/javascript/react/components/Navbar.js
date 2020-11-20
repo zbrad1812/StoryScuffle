@@ -8,6 +8,7 @@ const Navbar = (props) => {
       <div className="row column">
         <h5 className="side-bar-link-h5"><a className="new-story-link" href="/stories/new">Submit Your Own Story!</a></h5>
         <h5 className="side-bar-link-h5"><a className="new-story-link" href="/about">About this website!</a></h5>
+        <h5 className="side-bar-link-h5"><a className="new-story-link" href="/random">Take Me to a Random Story!</a></h5>
       </div>
     </div>
   );
