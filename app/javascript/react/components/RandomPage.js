@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react"
+import React, { useEffect, useState, Redirect } from "react"
 
 const RandomPage = (props) => {
   const [allStories, setAllStories] = useState([])
@@ -21,7 +21,16 @@ useEffect(() => {
     .catch((error) => console.error(`Error in fetch: ${error.message}`));
 }, []);
 
-  debugger
+  if (allStories[0]) {
+    let allStoryIds = allStories.map(storyObject => {
+      return storyObject.id
+    })
+    const randomId = allStoryIds[Math.floor(Math.random() * allStoryIds.length)];
+    if(randomId){
+      window.location.replace(`/stories/${randomId}`);
+    }
+  }
+
 
   return(
     <h4 className="about-paragraph"> this is da random page loader</h4>
