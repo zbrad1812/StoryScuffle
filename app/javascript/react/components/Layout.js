@@ -6,6 +6,7 @@ import StoriesShowPage from "./StoriesShowPage"
 import StoriesNewPage from "./StoriesNewPage"
 import Navbar from "./Navbar"
 import AboutPage from "./AboutPage"
+import RandomPage from "./RandomPage"
 
 const Layout = (props) => {
   return (
@@ -14,6 +15,7 @@ const Layout = (props) => {
       <Switch>
         <Route exact path="/" component={StoriesIndexPage}/>
         <Route exact path="/about" component={AboutPage}/>
+        <Route exact path="/random" component={RandomPage}/>
         <Route exact path="/stories" component={StoriesIndexPage}/>
         <Route exact path="/stories/new" component={StoriesNewPage}/>
         <Route exact path="/stories/:id" component={StoriesShowPage}/>
